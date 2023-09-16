@@ -19,7 +19,7 @@ const initialState: State = {
 export const authReducer = createReducer(
   initialState,
 
-  on(AuthActions.signUpStart, AuthActions.signInStart, (current, props) => {
+  on(AuthActions.signUpStart, AuthActions.signInStart, (current) => {
     const next: State = {
       ...current,
       error: null,
@@ -51,7 +51,7 @@ export const authReducer = createReducer(
     return next;
   }),
 
-  on(AuthActions.resetError, (current, props) => {
+  on(AuthActions.resetError, (current) => {
     const next: State = {
       ...current,
       error: null,
@@ -60,7 +60,7 @@ export const authReducer = createReducer(
     return next;
   }),
 
-  on(AuthActions.signOut, (current, props) => {
+  on(AuthActions.signOut, (current) => {
     const next: State = {
       ...current,
       user: null,
