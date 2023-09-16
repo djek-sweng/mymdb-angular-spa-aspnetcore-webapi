@@ -63,7 +63,7 @@ export class AdminEffects {
                 return ACTION_NOP;
               }),
 
-              catchError((error) => {
+              catchError(() => {
                 return of(ACTION_NOP);
               })
             );
@@ -93,7 +93,7 @@ export class AdminEffects {
                 return ACTION_NOP;
               }),
 
-              catchError((error) => {
+              catchError(() => {
                 return of(ACTION_NOP);
               })
             );
@@ -147,7 +147,7 @@ export class AdminEffects {
                 return ACTION_NOP;
               }),
 
-              catchError((error) => {
+              catchError(() => {
                 return of(ACTION_NOP);
               })
             );
