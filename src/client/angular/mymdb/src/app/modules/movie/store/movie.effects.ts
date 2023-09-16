@@ -60,7 +60,7 @@ export class MovieEffects {
                 return ACTION_NOP;
               }),
 
-              catchError((error) => {
+              catchError(() => {
                 return of(ACTION_NOP);
               })
             );
@@ -90,7 +90,7 @@ export class MovieEffects {
                 return ACTION_NOP;
               }),
 
-              catchError((error) => {
+              catchError(() => {
                 return of(ACTION_NOP);
               })
             );
@@ -120,7 +120,7 @@ export class MovieEffects {
                 return ACTION_NOP;
               }),
 
-              catchError((error) => {
+              catchError(() => {
                 return of(ACTION_NOP);
               })
             );
