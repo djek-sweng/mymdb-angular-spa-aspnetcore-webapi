@@ -11,9 +11,9 @@ import { IToken, TOKEN_EMTPY } from '../../models/token.model';
   styleUrls: ['./auth.component.css'],
 })
 export class AuthComponent implements OnInit, OnDestroy {
-  isSignInMode: boolean = true;
-  isLoading: boolean = false;
-  errorMessage: string = '';
+  isSignInMode = true;
+  isLoading = false;
+  errorMessage = '';
   token: IToken = TOKEN_EMTPY;
 
   private closeSubscription: Subscription | undefined;

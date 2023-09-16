@@ -60,7 +60,7 @@ export const authReducer = createReducer(
     return next;
   }),
 
-  on(AuthActions.signOut, (current, _props) => {
+  on(AuthActions.signOut, (current, props) => {
     const next: State = {
       ...current,
       user: null,
