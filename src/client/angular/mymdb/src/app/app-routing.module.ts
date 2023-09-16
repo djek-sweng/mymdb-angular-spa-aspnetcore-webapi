@@ -37,7 +37,7 @@ const routes: Routes = [
   { path: '**', redirectTo: '/error/not-found' },
 ];
 
-var extraOptions: ExtraOptions = {
+const extraOptions: ExtraOptions = {
   /** [false] | true */
   useHash: false,
   /** [NoPreloading] | PreloadAllModules */

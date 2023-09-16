@@ -13,6 +13,7 @@ global using MyMDb.Identity.Extensions;
 global using MyMDb.Identity.Models;
 global using MyMDb.Identity.UseCases;
 global using MyMDb.Shared.Dtos;
+global using MyMDb.Shared.Exceptions;
 global using MyMDb.Shared.Exceptions.Filters;
 global using MyMDb.Shared.Extensions;
 global using MyMDb.WebApi.Dtos;

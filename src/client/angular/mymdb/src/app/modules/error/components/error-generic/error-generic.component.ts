@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./error-generic.component.css'],
 })
 export class ErrorGenericComponent implements OnInit {
-  message: string = '';
+  message = '';
 
   constructor(private readonly route: ActivatedRoute) {}
 

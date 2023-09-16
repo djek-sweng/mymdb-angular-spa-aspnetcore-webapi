@@ -9,10 +9,10 @@ import { AuthService } from 'src/app/modules/auth/services/auth.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit, OnDestroy {
-  isAuthenticated: boolean = false;
-  isAuthorizedUser: boolean = false;
-  isAuthorizedAdmin: boolean = false;
-  email: string = '';
+  isAuthenticated = false;
+  isAuthorizedUser = false;
+  isAuthorizedAdmin = false;
+  email = '';
 
   private userSubscription: Subscription | undefined;
 

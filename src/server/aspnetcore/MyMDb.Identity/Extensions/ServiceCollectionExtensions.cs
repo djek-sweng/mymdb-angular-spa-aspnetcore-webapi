@@ -30,6 +30,7 @@ public static class ServiceCollectionExtensions
         services.AddScoped<UserService>();
         services.AddScoped<RoleService>();
 
+        services.AddScoped<AdminDeleteUserUseCase>();
         services.AddScoped<AdminReadUsersUseCase>();
         services.AddScoped<CreateUserUseCase>();
         services.AddScoped<GenerateClaimsUseCase>();
