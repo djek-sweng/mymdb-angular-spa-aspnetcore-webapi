@@ -1,7 +1,7 @@
-import { createAction, props } from "@ngrx/store";
+import { createAction, props } from '@ngrx/store';
 
-import { User } from "../../shared/models/user.model";
-import { IHttpError } from "../../shared/models/http-error.model";
+import { User } from '../../shared/models/user.model';
+import { IHttpError } from '../../shared/models/http-error.model';
 
 /**
  * SIGN_UP_START
