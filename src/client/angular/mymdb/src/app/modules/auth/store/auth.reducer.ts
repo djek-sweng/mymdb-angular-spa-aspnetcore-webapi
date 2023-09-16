@@ -19,9 +19,6 @@ const initialState: State = {
 export const authReducer = createReducer(
   initialState,
 
-  /**
-   * --------------------------------------------------------------------------------
-   */
   on(AuthActions.signUpStart, AuthActions.signInStart, (current, props) => {
     const next: State = {
       ...current,
@@ -32,9 +29,6 @@ export const authReducer = createReducer(
     return next;
   }),
 
-  /**
-   * --------------------------------------------------------------------------------
-   */
   on(AuthActions.authenticateSuccess, (current, props) => {
     const next: State = {
       ...current,
@@ -46,9 +40,6 @@ export const authReducer = createReducer(
     return next;
   }),
 
-  /**
-   * --------------------------------------------------------------------------------
-   */
   on(AuthActions.authenticateError, (current, props) => {
     const next: State = {
       ...current,
@@ -60,9 +51,6 @@ export const authReducer = createReducer(
     return next;
   }),
 
-  /**
-   * --------------------------------------------------------------------------------
-   */
   on(AuthActions.resetError, (current, props) => {
     const next: State = {
       ...current,
@@ -72,10 +60,7 @@ export const authReducer = createReducer(
     return next;
   }),
 
-  /**
-   * --------------------------------------------------------------------------------
-   */
-  on(AuthActions.signOut, (current, props) => {
+  on(AuthActions.signOut, (current, _props) => {
     const next: State = {
       ...current,
       user: null,
